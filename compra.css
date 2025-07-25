@@ -1,0 +1,92 @@
+/* compra.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e74c3c22;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #c0392b;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Etiquetas */
+label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Inputs */
+.form-control {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.form-control:focus {
+  border-color: #c0392b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(192, 57, 43, 0.3);
+}
+
+/* Lista de productos */
+#lista-productos {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#lista-productos li {
+  font-size: 0.95rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Botón */
+#btn_comprar {
+  width: 100%;
+  background-color: #e74c3c;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+#btn_comprar:hover {
+  background-color: #c0392b;
+  cursor: pointer;
+}

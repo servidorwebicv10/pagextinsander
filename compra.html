@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Formulario de compra</title>
+  <link rel="stylesheet" href="compra.css">
+  <!-- Solo CSS de Bootstrap, sin scripts -->
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Formulario de Compra</h2>
+    <form>
+      <!-- Nombre -->
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+      </div>
+
+      <!-- Correo -->
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+      </div>
+
+      <!-- Dirección -->
+      <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input type="text" class="form-control" id="direccion" placeholder="Tu dirección" required>
+      </div>
+
+      <!-- Ciudad -->
+      <div class="form-group">
+        <label for="ciudad">Ciudad</label>
+        <input type="text" class="form-control" id="ciudad" placeholder="Tu ciudad" required>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Tu número de contacto" required>
+      </div>
+
+      <!-- Producto -->
+      <div class="form-group">
+        <label>Productos en el carrito</label>
+        <ul id="lista-productos" class="list-group">
+          <!-- Aquí se insertan los productos vía JavaScript -->
+        </ul>
+      </div>
+
+      <!-- Tarjeta de crédito -->
+      <div class="form-group">
+        <label for="tarjeta">Número de tarjeta de crédito</label>
+        <input type="text" class="form-control" id="tarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="btn btn-primary" id="btn_comprar">Enviar compra</button>
+    </form>
+  </div>
+</body>
+<script src="compra.js"></script>
+
+</html>

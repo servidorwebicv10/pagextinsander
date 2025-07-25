@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Extintores</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Extintores Santander</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="clima.html">Clima</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/noticias.html">Noticias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Iniciar sesion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registro.html">Registrarse</a>
+      </li>
+    </ul>
+    <h1 class="titulo-principal">
+      <i class="fas fa-fire-extinguisher"></i>
+      Catálogo de Extintores
+    </h1>
+  </header>
+
+
+  <button id="abrir-carrito">🛒 Ver carrito</button>
+
+  <div class="cards-container">
+    <div class="card" style="width: 18rem;">
+      <img src="co2red.jpeg" class="img-corta" alt="CO2">
+      <div class="card-body">
+        <h5 class="card-title">Extintor CO2 10kg</h5>
+        <p class="card-text">Combina CO₂ para fuegos eléctricos y agua para sólidos combustibles.
+          <br><strong>Utilidad:</strong> Apaga incendios de clase A y C.
+          <br><strong>Casos de uso:</strong> Áreas mixtas con riesgo eléctrico y materiales sólidos, como laboratorios o
+          centros de datos.
+        </p>
+        <div class="acciones">
+          <a href="#" class="btn btn-danger"
+            onclick="agregarAlCarrito({ id: 1, nombre: 'Extintor CO2 10kg', precio: 85 })">Agregar</a>
+          <strong>$85,00</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="agua.jpg" class="img-corta" alt="CO2">
+      <div class="card-body">
+        <h5 class="card-title">Extintor de Agua</h5>
+        <p class="card-text">Emite agua en forma de niebla fina, ideal para enfriar y cubrir superficies sin dañar
+          equipos sensibles.
+          <br><strong>Utilidad:</strong> Apto para fuegos clase A, con bajo riesgo eléctrico.
+          <br><strong>Casos de uso:</strong> Hospitales, museos, oficinas y almacenes.
+        </p>
+        <div class="acciones">
+          <a href="#" class="btn btn-danger"
+            onclick="agregarAlCarrito({ id: 2, nombre: 'Extintor de Agua', precio: 95 })">Agregar</a>
+          <strong>$95,00</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="multi.jpg" class="img-corta" alt="ABC">
+      <div class="card-body">
+        <h5 class="card-title">Extintor Multiproposito</h5>
+        <p class="card-text">Contiene polvo químico seco para combatir fuegos clase A, B y C.
+          <br><strong>Utilidad:</strong> Versátil y efectivo en diversos tipos de incendios.
+          <br><strong>Casos de uso:</strong> Hogares, oficinas, vehículos y comercios.
+        </p>
+        <div class="acciones">
+          <a href="#" class="btn btn-danger"
+            onclick="agregarAlCarrito({ id: 3, nombre: 'Extintor ABC 5kg', precio: 45 })">Agregar</a>
+          <strong>$45,00</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="acero.jpg" class="img-corta" alt="CO2">
+      <div class="card-body">
+        <h5 class="card-title">Extintor de Acero</h5>
+        <p class="card-text">Fabricado con cilindro de acero resistente, usado para distintos tipos de agentes
+          extintores.
+          <br><strong>Utilidad:</strong> Brinda mayor durabilidad y seguridad.
+          <br><strong>Casos de uso:</strong> Industrias, exteriores o ambientes con condiciones exigentes.
+        </p>
+        <div class="acciones">
+          <a href="#" class="btn btn-danger"
+            onclick="agregarAlCarrito({ id: 4, nombre: 'Extintor de Acero', precio: 105 })">Agregar</a>
+          <strong>$105,00</strong>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sidebar del carrito -->
+    <div id="carrito-sidebar">
+      <button id="cerrar-carrito">✖</button>
+      <h2>Carrito de compras</h2>
+      <ul id="carrito-lista"></ul>
+      <p id="total"></p>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+      <a href="compra.html">
+      <button id="compras">Comprar</button>
+      </a>
+    </div>
+  </div>
+  <footer>
+            <div class="containerFooter">
+                <h5>SOBRE NOSOTROS</h5>
+                <P>parrafo</P>
+                <h5>CONTACTOS</h5>
+                <span>Correo: uncorreo@gmail.com</span>
+                <p>WhatsApp: +57 312 3456789</p><br>
+                <div class="redes">
+                    <h5>REDES SOCIALES</h5>
+                    <img src="ig.jpeg" class="rounded" alt="Ig">
+                    <img src="was.jpeg" class="rounded" alt="wsp">
+                    <img src="face.jpeg" class="rounded" alt="face">
+                </div>
+            </div>
+        </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>

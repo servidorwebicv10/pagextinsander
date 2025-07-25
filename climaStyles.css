@@ -1,0 +1,104 @@
+/* climaStyles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+/* Header */
+header {
+  background-color: #c0392b;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Henny Penny', cursive;
+  color: white;
+  margin-top: 10px;
+  font-size: 2.8rem;
+}
+
+.nav {
+  background-color: #e74c3c;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f1c40f;
+}
+
+/* Clima info */
+div:not(footer) {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+div p {
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+span {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Footer */
+footer {
+  background-color: #c0392b;
+  color: rgb(73, 58, 58);
+  padding: 30px 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.containerFooter {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+footer h5 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+  font-weight: bold;
+}
+
+footer p,
+footer span {
+  font-size: 1rem;
+}
+
+.redes img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.1);
+}
