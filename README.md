@@ -149,7 +149,7 @@ This project was built to:
 
 ---
 
-## 📌 Disclaimer
+## Disclaimer
 
 This project is for educational purposes only.  
 It simulates the behavior of a commercial website but does not represent a production-ready system.
